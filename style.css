@@ -5,8 +5,11 @@ nav {
 }
 nav a:link {
   color: #000;
-  background-color: transparent;
   text-decoration: none;
+}
+nav a:hover {
+  color: #000;
+  text-decoration: underline;
 }
 nav li {
   margin: 0 5px;
