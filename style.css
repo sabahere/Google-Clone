@@ -1,0 +1,148 @@
+nav {
+  margin-right: 1vw;
+  margin-top: 0.5vw;
+  font-size: 14px;
+}
+nav a:link {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+}
+nav li {
+  margin: 0 5px;
+}
+li {
+  display: inline-block;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+input[type="text"] {
+  width: 80%;
+  padding: 12px 12px;
+  border: none;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: none;
+}
+
+.sign-in {
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 0.1cm;
+  color: #fff;
+  padding: 7px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.container {
+  margin: -70px 0 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.google-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.search {
+  border: 1px solid #d7d7db;
+  border-radius: 1cm;
+  width: 45%;
+  margin: 0 auto;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+}
+.mic,
+.lens,
+.dot-grid {
+  width: 30px;
+  height: 30px;
+}
+.center {
+  text-align: center;
+}
+.inline {
+  display: inline-block;
+}
+.small {
+  font-size: 13px;
+}
+.space {
+  margin-bottom: 30px;
+}
+.right {
+  position: absolute;
+  right: 0;
+}
+.google-btn {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 0.1cm;
+  color: #000;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 3px;
+}
+.google-btn:hover {
+  border: 1px solid #dbdde1;
+}
+.languages {
+  margin-top: -10px;
+}
+.languages div {
+  margin-right: -30px;
+}
+.languages li {
+  margin: 0 3px;
+}
+.languages a:link {
+  color: #1a0dab;
+  text-decoration: none;
+}
+.languages a:hover {
+  text-decoration: underline;
+}
+.location {
+  margin: 11px 30px;
+}
+.divider {
+  border-top: 1px solid #a8a8b1;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+.footer {
+  margin-left: -18px;
+  margin-bottom: -3px;
+  font-size: 15px;
+}
+
+.footer li {
+  margin: 0 15px;
+}
+.footer a:link {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #000;
+  background-color: transparent;
+  text-decoration: underline;
+}
