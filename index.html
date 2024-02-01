@@ -13,80 +13,138 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="body">
     <nav class="right">
       <ul>
-        <li><a href="https://www.google.co.uk/">Gmail</a></li>
-        <li><a href="https://www.google.co.uk/">Images</a></li>
-        <li><img class="dot-grid" src="dot-grid.svg" /></li>
-        <li><button class="sign-in" type="button">Sign In</button></li>
+        <li class="hide" id="gmail">
+          <a href="https://www.google.com/gmail/about/">Gmail</a>
+        </li>
+        <li class="hide">
+          <a id="images">Images</a>
+        </li>
+        <li><img class="dot-grid" src="./images/dot-grid.svg" /></li>
+        <li>
+          <a
+            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.co.uk%2F%3Fpccc%3D1&ec=GAZAmgQ&hl=en&ifkv=ASKXGp27HnQFYvSyQzNzzjfRVIkhw5osjYwCy_7wc56xuBw0W0gbNS5YjpTqnSx5q2zbbMfKjJZ-vA&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1878636548%3A1706806153272128&theme=glif"
+            ><button id="sign-in" class="sign-in" type="button">
+              Sign In
+            </button></a
+          >
+        </li>
       </ul>
     </nav>
-    <section class="container">
-      <div><img class="google-img" src="google.png" /></div>
-      <div class="search center space">
-        <img class="icon inline" src="icon.png" /><input
+    <section id="container" class="container">
+      <div><img class="google-img" src="./images/google.png" /></div>
+      <div id="search-bar" class="search center space">
+        <img class="icon inline" src="./images/icon.png" /><input
           class="inline"
           type="text"
+          id="search-input"
         />
         <div class="inline">
-          <img class="mic" src="mic.png" />
-          <img class="lens" src="lens.png" />
+          <img class="mic" src="./images/mic.png" />
+          <img class="lens" src="./images/lens.png" />
         </div>
       </div>
-      <div class="center space">
-        <button class="google-btn" type="button">Google Search</button>
-        <button class="google-btn" type="button">I'm Feeling Lucky</button>
+      <div class="center hide space">
+        <button id="google-search" class="google-btn" type="button">
+          Google Search
+        </button>
+        <button id="feeling-lucky" class="google-btn" type="button">
+          I'm Feeling Lucky
+        </button>
       </div>
 
-      <div class="space languages center">
-        <div class="inline small">Google offered in:</div>
+      <div class="space hide languages center">
+        <div class="inline small" style="color: #46484b">
+          Google offered in:
+        </div>
         <ul class="inline small">
-          <li><a href="https://www.google.co.uk/">हिन्दी</a></li>
-          <li><a href="https://www.google.co.uk/">বাংলা</a></li>
-          <li><a href="https://www.google.co.uk/">తెలుగు </a></li>
-          <li><a href="https://www.google.co.uk/">मराठी </a></li>
-          <li><a href="https://www.google.co.uk/">தமிழ்</a></li>
-          <li><a href="https://www.google.co.uk/">ગુજરાતી</a></li>
-          <li><a href="https://www.google.co.uk/">ಕನ್ನಡ</a></li>
-          <li><a href="https://www.google.co.uk/">മലയാളം</a></li>
-          <li><a href="https://www.google.co.uk/">ਪੰਜਾਬੀ </a></li>
+          <li id="hindi"><a href="https://www.google.co.uk/">हिन्दी</a></li>
+          <li id="bangla"><a href="https://www.google.co.uk/">বাংলা</a></li>
+          <li id="telugu"><a href="https://www.google.co.uk/">తెలుగు </a></li>
+          <li id="marathi"><a href="https://www.google.co.uk/">मराठी </a></li>
+          <li id="tamil"><a href="https://www.google.co.uk/">தமிழ்</a></li>
+          <li id="gujrati"><a href="https://www.google.co.uk/">ગુજરાતી</a></li>
+          <li id="kannada"><a href="https://www.google.co.uk/">ಕನ್ನಡ</a></li>
+          <li id="malyalam"><a href="https://www.google.co.uk/">മലയാളം</a></li>
+          <li id="punjabi"><a href="https://www.google.co.uk/">ਪੰਜਾਬੀ </a></li>
         </ul>
       </div>
     </section>
     <footer>
-      <div class="location">Location</div>
+      <div id="location" class="location">Location</div>
       <hr class="divider" />
       <div class="footer">
         <div class="inline">
           <ul>
-            <li>
+            <li class="a-link">
               <a
                 href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1"
                 >About</a
               >
             </li>
-            <li>
+            <li class="a-link">
               <a
                 href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
                 >Advertising</a
               >
             </li>
-            <li>
+            <li class="a-link">
               <a href="https://www.google.com/intl/en_in/business/">Business</a>
             </li>
-            <li>
+            <li class="a-link">
               <a href="https://www.google.com/search/howsearchworks/?fg=1"
                 >How Search works</a
               >
             </li>
           </ul>
         </div>
+
         <div class="inline right">
           <ul>
-            <li><a href="https://www.google.co.uk/">Privacy</a></li>
-            <li><a href="https://www.google.co.uk/">Terms</a></li>
-            <li><a href="https://www.google.co.uk/">Settings</a></li>
+            <li class="a-link">
+              <a href="https://policies.google.com/privacy?hl=en-IN&fg=1"
+                >Privacy</a
+              >
+            </li>
+            <li class="a-link">
+              <a href="https://policies.google.com/terms?hl=en-IN&fg=1"
+                >Terms</a
+              >
+            </li>
+            <li>
+              <div id="dropup" class="dropup">
+                <span class="a-link"> <a class="setting">Settings</a></span>
+
+                <div id="dropup-content" class="dropup-content">
+                  <a href="https://www.google.co.uk/preferences?hl=en-IN&fg=1"
+                    >Search settings</a
+                  >
+                  <a
+                    href="https://www.google.co.uk/advanced_search?hl=en-IN&fg=1"
+                    >Advanced search</a
+                  >
+                  <a
+                    href="https://myaccount.google.com/intro/yourdata/search?utm_source=googlemenu&fg=1&cctld=co.uk"
+                    >Your data in Search</a
+                  >
+                  <a
+                    href="https://www.google.co.uk/history/optout?hl=en-IN&fg=1"
+                    >Search history</a
+                  >
+                  <a
+                    href="https://support.google.com/websearch/?visit_id=638424002053810479-1536139798&hl=en-IN&rd=2#topic=3378866"
+                    >Search help</a
+                  >
+                  <a href="#">Send feedback</a>
+                  <hr class="divider2" />
+                  <a id="theme-toggle" class="theme" href="#"
+                    >Dark theme: Off</a
+                  >
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
